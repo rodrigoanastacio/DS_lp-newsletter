@@ -1,0 +1,21 @@
+.followMe {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  li {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      font-size: 2rem;
+      color: var(--off-white);
+    }
+  }
+}
