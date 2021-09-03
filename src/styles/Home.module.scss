@@ -1,0 +1,28 @@
+.newsletter {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--off-white);
+  z-index: 1;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 900;
+    color: var(--rose);
+    font-family: 'Montserrat', serif;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 1.875rem;
+  }
+
+  mark {
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 1px;
+    opacity: 0.8;
+  }
+}

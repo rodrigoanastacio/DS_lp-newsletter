@@ -1,0 +1,72 @@
+.hero {
+  background: linear-gradient(rgb(50, 75, 113) 0%, rgb(23, 36, 58) 50%);
+  min-height: 100vh;
+  text-align: center;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    &::after {
+      content: '';
+      background: url(../../../public/borboleta-esquerda.svg) no-repeat left
+        center;
+      background-size: contain;
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &::before {
+    content: '';
+    background: url(../../../public/borboleta-direita.svg) no-repeat right
+      center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 1;
+
+    input {
+      width: 100%;
+      padding: 20px 15px;
+      border: 0;
+      color: #747171;
+      margin-bottom: 0.9375rem;
+    }
+
+    button {
+      border: none;
+      font-size: 22px;
+      background-color: var(--blue);
+      color: var(--off-white);
+      padding: 20px 15px;
+    }
+  }
+}
